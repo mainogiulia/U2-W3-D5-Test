@@ -51,7 +51,7 @@ const detailsCard = function (productDescr) {
   deleteButton.textContent = "Delete";
 
   deleteButton.addEventListener("click", function () {
-    if (confirm(`Are you sure you want to delete ${product.name}?`) == true) {
+    if (confirm(`Are you sure you want to delete ${productDescr.name}?`) == true) {
       deleteProduct();
     }
   });
@@ -59,7 +59,7 @@ const detailsCard = function (productDescr) {
 };
 
 const deleteProduct = function () {
-  fetch(productsUrl, {
+  fetch(productsUrl + "/" + productId, {
     headers: {
       method: "DELETE",
       Authorization: myToken,
@@ -68,12 +68,12 @@ const deleteProduct = function () {
     .then((response) => {
       if (response.ok) {
         alert(`You succesfully deleted the product`);
-        // location.assign("./index.html");
+        location.assign("./index.html");
       } else {
         throw new Error("Error: Item was not deleted");
       }
     })
     .catch((err) => {
-      console.log("ERRORE", err);
+      console.log("ERROR", err);
     });
 };

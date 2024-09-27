@@ -35,7 +35,7 @@ const createItemsCards = function (newItem) {
                                 <h5 class="card-title">${product.name}</h5>
                                 <h6 class="card-text">Price: ${product.price} €</h6>
                                 <p class="card-text">Platform: ${product.brand}</p>
-                                <p class="card-text">Conditions: ${product.description}</p>
+                                <p class="card-text">Condition: ${product.description}</p>
                                 <a href="./details.html?productId=${product._id}" id="viewButton" class="btn text-white" style="background-color: #2c3e50">View</a>
                             </div>
                          </div>`;

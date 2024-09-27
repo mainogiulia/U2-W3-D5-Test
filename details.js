@@ -38,7 +38,7 @@ const detailsCard = function (productDescr) {
     <h5 class="card-title">${productDescr.name}</h5>
     <h6 class="card-text">Price: ${productDescr.price} €</h6>
     <p class="card-text">Platform: ${productDescr.brand}</p>
-    <p class="card-text">Conditions: ${productDescr.description}</p>
+    <p class="card-text">Condition: ${productDescr.description}</p>
     <a href="./details.html?productId=${productDescr._id}" id="viewButton" class="btn text-white" style="background-color: #2c3e50">View</a>
     <a href="#" id="editButton" class="btn text-white" style="background-color: #2c3e50e3">Edit</a>
     </div>

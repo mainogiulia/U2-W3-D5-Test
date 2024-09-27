@@ -60,8 +60,8 @@ const detailsCard = function (productDescr) {
 
 const deleteProduct = function () {
   fetch(productsUrl + "/" + productId, {
+    method: "DELETE",
     headers: {
-      method: "DELETE",
       Authorization: myToken,
     },
   })

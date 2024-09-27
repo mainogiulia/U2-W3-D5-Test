@@ -34,8 +34,6 @@
             <img src="./assets/web-logo.PNG" class="w-25" alt="web site logo" />
             <strong>Nexus Games</strong>
           </a>
-          <a class="nav-link text-white" href="./index.html">Home</a>
-          <a class="nav-link text-white text-decoration-underline" href="./backoffice.html">Backoffice</a>
           <button
             class="navbar-toggler"
             style="background-color: #3498db"
@@ -51,41 +49,8 @@
         </div>
       </nav>
     </header>
-    <h1 class="my-4 text-center">Create a new product to add to the store</h1>
     <main class="flex-grow-1">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col col-12 col-md-8">
-            <form id="product-form">
-              <div class="mb-3">
-                <label for="category" class="form-label">Poster</label>
-                <input type="text" class="form-control" id="imageUrl" placeholder="Enter the URL of the product's poster" required />
-              </div>
-              <div class="mb-3">
-                <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Enter the name of the product" required />
-              </div>
-              <div class="mb-3">
-                <label for="price" class="form-label">Price</label>
-                <input type="number" class="form-control" id="price" placeholder="Enter the price of the product" required />
-              </div>
-              <div class="mb-3">
-                <label for="platform" class="form-label">Platform</label>
-                <input type="text" class="form-control" id="brand" placeholder="Enter the platform compatible to the product" required />
-              </div>
-              <div class="mb-3">
-                <label for="conditions">Conditions:</label>
-                <select name="product_conditions" id="description">
-                  <option value="New">New</option>
-                  <option value="Used">Used</option>
-                </select>
-              </div>
-              <button type="submit" id="form-button" class="btn btn-primary border-0" style="background-color: #2c3e50">ADD NEW PRODUCT</button>
-            </form>
-            <p class="text-danger pt-2">*All parameters are required</p>
-          </div>
-        </div>
-      </div>
+      <div id="details-row" class="row"></div>
     </main>
     <footer class="pt-3 text-white" style="background-color: #2c3e50">
       <div class="container">
@@ -109,6 +74,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="./backoffice.js"></script>
+    <script src="./details.js"></script>
   </body>
 </html>
